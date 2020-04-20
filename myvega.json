@@ -12,6 +12,16 @@
 			"range": [0, 180]
 		}
 	}],
+	"title": "PM10 Annual Weather Heatmap",
+	"config": {
+		"view": {
+			"strokeWidth": 0,
+			"step": 13
+		},
+		"axis": {
+			"domain": false
+		}
+	},
 	"mark": "rect",
 	"encoding": {
 		"x": {
@@ -31,7 +41,7 @@
 			"title": "Month"
 		},
 		"color": {
-			"field": "pm10",
+			"field": "temp",
 			"aggregate": "max",
 			"type": "quantitative",
 			"legend": {

@@ -1,56 +1,43 @@
 {
-	"$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-	"description": "My interactive chart",
-	"width": 860,
-	"height": 500,
-	"data": {
-		"url": "https://raw.githubusercontent.com/Maplub/AirQualityData/master/PM10_2018_daily.csv"
-	},
-	"transform": [{
-		"filter": {
-			"field": "pm10",
-			"range": [0, 180]
-		}
-	}],
-	  "selection": {
-    "pts": {
-      "type": "single"
-    }
+
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+
+  "data": {"url": "https://raw.githubusercontent.com/Maplub/AirQualityData/master/PM10_2018_daily.csv"
   },
-	"title": "PM10 Annual Weather Heatmap",
-	"mark": "rect",
-	"encoding": {
-		"x": {
-			"timeUnit": "date",
-			"field": "date",
-			"type": "ordinal",
-			"title": "Day",
-			"axis": {
-				"labelAngle": 0,
-				"format": "%e"
-			}
-		},
-		"y": {
-			"timeUnit": "month",
-			"field": "date",
-			"type": "ordinal",
-			"title": "Month"
-		},
-		"color": {
-			"field": "pm10",
-			"type": "quantitative",
-			"legend": {
-				"title": null
-			},
-			"tooltip": [{
-					"field": "id 2",
-					"type": "nominal"
-				},
-				{
-					"field": "pm10",
-					"type": "quantitative"
-				}
-			]
-		}
-	}
-}
+  "title": "2018 Daily Air Quility (PM10)",
+    "config": {
+      "view": {
+          "strokeWidth": 0,
+          "step": 20
+      },
+      "axis": {
+          "domain": false
+      }
+    },
+  "mark": "rect",
+  "encoding": {
+      "x": {
+          "title": "Day",
+          "timeUnit": "date",
+          "field": "time",
+          "type": "ordinal",
+          "axis": {
+              "labelAngle": 0,
+              "format": "%e"
+          }
+    },
+      "y": {
+          "title": "Month",
+          "timeUnit": "month",
+          "field": "time",
+          "type": "ordinal"
+    },
+      "color": {
+          "field": "pm10",
+          "aggregate": "mean",
+          "type": "quantitative",
+          "legend": {
+              "title": null}
+        }
+    }
+  }

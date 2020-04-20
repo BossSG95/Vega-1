@@ -4,11 +4,9 @@
   "width": 860,
   "height":500,
   "data": {"url": "https://raw.githubusercontent.com/Maplub/AirQualityData/master/PM10_2018_daily.csv"},
-  "selection": {
-    "pts": {
-      "type": "single"
-    }
-  },
+   "transform": [{
+    "filter": {"field": "pm10", "range": [0, 180]}
+  }],
   "mark": "rect",
   "encoding": {
     "x": {"timeUnit":"date","field": "date","type": "ordinal","title": "Day","axis": {"labelAngle": 0,"format": "%e"}},

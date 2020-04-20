@@ -12,6 +12,11 @@
 			"range": [0, 180]
 		}
 	}],
+	  "selection": {
+    "pts": {
+      "type": "single"
+    }
+  },
 	"title": "PM10 Annual Weather Heatmap",
 	"mark": "rect",
 	"encoding": {

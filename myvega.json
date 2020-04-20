@@ -38,7 +38,7 @@
 		},
 		"color": {
 			"field": "pm10",
-			"aggregate": "max",
+			"aggregate": "mean",
 			"type": "quantitative",
 			"legend": {
 				"title": null

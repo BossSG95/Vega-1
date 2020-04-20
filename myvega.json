@@ -9,7 +9,7 @@
       "type": "single"
     }
   },
-  "mark": "line",
+  "mark": "rect",
   "encoding": {
     "x": {"timeUnit":"date","field": "date","type": "temporal","title": "Day"},
     "y": {"field": "date","timeUnit":"month","type": "temporal","title":"Month"},

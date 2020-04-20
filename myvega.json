@@ -12,31 +12,10 @@
       "type": "single"
     }
   },
-   "mark": "rect",
+   "mark": "line",
   "encoding": {
-      "x": {
-          "field": "date",
-          "timeUnit": "date",
-          "type": "ordinal",
-          "title": "Day",
-          "axis": {
-              "labelAngle": 0,
-              "format": "%e"
-          }
-      },
-      "y": {
-          "field": "date",
-          "timeUnit": "month",
-          "type": "ordinal",
-          "title": "Month"
-      },
-      "color": {
-          "field": "temp",
-          "aggregate": "max",
-          "type": "quantitative",
-          "legend": {
-              "title": null
-          }
-      }
+         "x": {"timeUnit":"day","field": "time", "type": "temporal"},
+
+    "y": {"aggregate":"mean","field": "pm10", "type": "quantitative"}
   }
 }

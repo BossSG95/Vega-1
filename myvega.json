@@ -1,24 +1,51 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "description": "My interactive chart",
-  "width": 860,
-  "height":500,
-  "data": {"url": "https://raw.githubusercontent.com/Maplub/AirQualityData/master/PM10_2018_daily.csv"},
-   "transform": [{
-    "filter": {"field": "pm10", "range": [0, 180]}
-  }],
-  "mark": "rect",
-  "encoding": {
-    "x": {"timeUnit":"date","field": "date","type": "ordinal","title": "Day","axis": {"labelAngle": 0,"format": "%e"}},
-    "y": {"timeUnit":"month","field": "date","type": "ordinal","title":"Month"},
-    "color": {
-      "condition": {
-        "selection": "pts",
-        "field": "id 2", "type": "nominal"
-      },
-      "value": "grey"
-    },
-    "tooltip": [{"field": "id 2", "type": "nominal"},
-                {"field": "pm10", "type": "quantitative"}]
-  }
+	"$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+	"description": "My interactive chart",
+	"width": 860,
+	"height": 500,
+	"data": {
+		"url": "https://raw.githubusercontent.com/Maplub/AirQualityData/master/PM10_2018_daily.csv"
+	},
+	"transform": [{
+		"filter": {
+			"field": "pm10",
+			"range": [0, 180]
+		}
+	}],
+	"mark": "rect",
+	"encoding": {
+		"x": {
+			"timeUnit": "date",
+			"field": "date",
+			"type": "ordinal",
+			"title": "Day",
+			"axis": {
+				"labelAngle": 0,
+				"format": "%e"
+			}
+		},
+		"y": {
+			"timeUnit": "month",
+			"field": "date",
+			"type": "ordinal",
+			"title": "Month"
+		},
+		"color": {
+			"field": "temp",
+			"aggregate": "max",
+			"type": "quantitative",
+			"legend": {
+				"title": null
+			},
+			"tooltip": [{
+					"field": "id 2",
+					"type": "nominal"
+				},
+				{
+					"field": "pm10",
+					"type": "quantitative"
+				}
+			]
+		}
+	}
 }

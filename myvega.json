@@ -12,18 +12,31 @@
       "type": "single"
     }
   },
-  "mark": "line",
+   "mark": "rect",
   "encoding": {
-    "x": {"timeUnit":"yearmonthday","field": "time", "type": "temporal"},
-    "y": {"field": "pm10","type": "quantitative"},
-    "color": {
-      "condition": {
-        "selection": "pts",
-        "field": "id 2", "type": "nominal"
+      "x": {
+          "field": "date",
+          "timeUnit": "date",
+          "type": "ordinal",
+          "title": "Day",
+          "axis": {
+              "labelAngle": 0,
+              "format": "%e"
+          }
       },
-      "value": "grey"
-    },
-    "tooltip": [{"field": "id 2", "type": "nominal"},
-                {"field": "pm10", "type": "quantitative"}]
+      "y": {
+          "field": "date",
+          "timeUnit": "month",
+          "type": "ordinal",
+          "title": "Month"
+      },
+      "color": {
+          "field": "temp",
+          "aggregate": "max",
+          "type": "quantitative",
+          "legend": {
+              "title": null
+          }
+      }
   }
 }

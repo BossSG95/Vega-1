@@ -13,15 +13,6 @@
 		}
 	}],
 	"title": "PM10 Annual Weather Heatmap",
-	"config": {
-		"view": {
-			"strokeWidth": 0,
-			"step": 13
-		},
-		"axis": {
-			"domain": false
-		}
-	},
 	"mark": "rect",
 	"encoding": {
 		"x": {

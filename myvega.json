@@ -48,7 +48,16 @@
 			"type": "quantitative",
 			"legend": {
 				"title": null
-			}
+			},
+			"tooltip": [{
+					"field": "id 2",
+					"type": "nominal"
+				},
+				{
+					"field": "pm10",
+					"type": "quantitative"
+				}
+			]
 		}
 	}
 }

@@ -32,7 +32,7 @@
 			"title": "Month"
 		},
 		"color": {
-			"field": "temp",
+			"field": "pm10",
 			"aggregate": "max",
 			"type": "quantitative",
 			"legend": {

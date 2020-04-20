@@ -4,7 +4,7 @@
 
   "data": {"url": "https://raw.githubusercontent.com/Maplub/AirQualityData/master/PM10_2018_daily.csv"
   },
-  "title": "2018 Daily Air Quility (PM10)",
+  "title": "PM10 Annual Weather Heatmap",
     "config": {
       "view": {
           "strokeWidth": 0,

@@ -4,9 +4,6 @@
   "width": 860,
   "height":500,
   "data": {"url": "https://raw.githubusercontent.com/Maplub/AirQualityData/master/PM10_2018_daily.csv"},
- "transform": [{
-    "filter": {"field": "pm10", "range": [0, 180]}
-  }],
   "selection": {
     "pts": {
       "type": "single"
@@ -14,8 +11,8 @@
   },
   "mark": "line",
   "encoding": {
-    "x": {"timeUnit":"date","field": "date","type": "ordinal","title": "Day"},
-    "y": {"field": "date","timeUnit":"month","type": "ordinal","title":"Month"},
+    "x": {"timeUnit":"date","field": "date","type": "temporal","title": "Day"},
+    "y": {"field": "date","timeUnit":"month","type": "temporal","title":"Month"},
     "color": {
       "condition": {
         "selection": "pts",

@@ -1,0 +1,29 @@
+{
+
+	"$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+
+	"data": {
+		"url": "https://raw.githubusercontent.com/Maplub/AirQualityData/master/PM10_2018_daily.csv"
+	},
+	"description": "PM10 Annual Weather Heatmap",
+	"width": 860,
+	"height": 500,
+	"mark": "line",
+
+	"encoding": {
+
+		"x": {
+			"timeUnit": "day",
+			"field": "time",
+			"type": "temporal"
+		},
+
+		"y": {
+			"aggregate": "mean",
+			"field": "pm10",
+			"type": "quantitative"
+		}
+
+	}
+
+}

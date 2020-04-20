@@ -14,8 +14,8 @@
   },
   "mark": "line",
   "encoding": {
-    "x": {"timeUnit":"yearmonthday","field": "time", "type": "temporal"},
-    "y": {"field": "pm10","type": "quantitative"},
+    "x": {"timeUnit":"date","field": "date","type": "ordinal","title": "Day"},
+    "y": {"field": "date","timeUnit":"month","type": "ordinal","title":"Month"},
     "color": {
       "condition": {
         "selection": "pts",

@@ -12,7 +12,7 @@
   },
   "mark": "line",
   "encoding": {
-    "x": {"timeUnit":"monthyear","field": "time", "type": "temporal"},
+    "x": {"timeUnit":"yearmonth","field": "time", "type": "temporal"},
     "y": {"field": "number","type": "quantitative"},
     "color": {
       "condition": {

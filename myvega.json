@@ -4,7 +4,7 @@
   "width": 860,
   "height":500,
   "data": {"url": "https://raw.githubusercontent.com/BossSG95/Vega-1/master/Data%20Rearrange.csv"},
-  "title": "ข้อมูลจำนวนผู้โดยสารรถไฟใต้ดิน ปี 2560",
+  "title": "ข้อมูลจำนวนผู้โดยสารรถไฟใต้ดิน ปี 1960",
   "selection": {
     "pts": {
       "type": "single"
@@ -12,7 +12,7 @@
   },
   "mark": "line",
   "encoding": {
-    "x": {"timeUnit":"yearmonth","field": "time", "type": "temporal"},
+    "x": {"timeUnit":"monthyear","field": "time", "type": "temporal"},
     "y": {"field": "number","type": "quantitative"},
     "color": {
       "condition": {

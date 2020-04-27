@@ -3,8 +3,8 @@
   "description": "My interactive chart",
   "width": 860,
   "height":500,
-  "data": {"url": "https://raw.githubusercontent.com/BossSG95/Vega-1/master/Data%20Rearrange.csv"},
-  "title": "ข้อมูลจำนวนผู้โดยสารรถไฟใต้ดิน ปี 1960",
+  "data": {"url": "https://raw.githubusercontent.com/BossSG95/Vega-1/master/Data%20Rearrange%202017.csv"},
+  "title": "ข้อมูลจำนวนผู้โดยสารรถไฟใต้ดิน ปี 2560/2017",
   "selection": {
     "pts": {
       "type": "single"

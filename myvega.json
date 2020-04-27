@@ -12,8 +12,8 @@
   },
   "mark": "line",
   "encoding": {
-    "x": {"timeUnit":"yearmonth","field": "time", "type": "temporal"},
-    "y": {"field": "number","type": "quantitative"},
+    "x": {"timeUnit":"yearmonth","field": "time", "type": "temporal","title": "ระยะเวลา เดือน-ปี"},
+    "y": {"field": "number","type": "quantitative","title": "จำนวนผู้ใช้บริการ (คน)"},
     "color": {
       "condition": {
         "selection": "pts",

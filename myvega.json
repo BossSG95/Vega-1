@@ -17,11 +17,11 @@
     "color": {
       "condition": {
         "selection": "pts",
-        "field": "station", "type": "nominal"
+        "field": "station", "type": "nominal","title": "รายชื่อสถานี"
       },
       "value": "grey"
     },
-    "tooltip": [{"field": "station", "type": "nominal","title": "รายชื่อสถานี"},
+    "tooltip": [{"field": "station", "type": "nominal"},
                 {"field": "number", "type": "quantitative"}]
   }
 }

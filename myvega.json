@@ -21,7 +21,7 @@
       },
       "value": "grey"
     },
-    "tooltip": [{"field": "station", "type": "nominal"},
+    "tooltip": [{"field": "station", "type": "nominal","title": "รายชื่อสถานี"},
                 {"field": "number", "type": "quantitative"}]
   }
 }
